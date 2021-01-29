@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/f8bd006f00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="whole-card">
+            <h1>Current Tempº</h1>
+            <section class="Title">
+                <div id="dateTime">
+                </div>
+            </section>
+            </br>
+            <form id="search-city">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" placeholder="Request a City" autocomplete="off" autofocus="on"
+                            id="search-city-input" />
+                        <input type="submit" value="Find" class="btn btn-primary" />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="Current Location" class="btn btn-success" id="current-location" />
+                    </div>
+                </div>
+            </form>
+            <section class="Location">
+                <div class="location-name">
+                    <h2 id="city">
+                        <strong>Nashville
+                        </strong>
+                    </h2>
+                </div>
+                <h3 id="temperature">
+                    4.4º C
+                </h3>
+                <h4 id="temperature-description">
+                    Feels Like: 3.9º C - Humidity: 40%
+                </h4>
+            </section>
+            <section class="Forescast">
+                <div class="card-group">
+                    <div class="card">
+                        <i class="fas fa-sun"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Saturday 01/02/2021</h4>
+                            <h5 class="card-text">10ºC</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Sunday 01/03/2021</h4>
+                            <h5 class="card-text">9ºC</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Monday 01/04/2021</h4>
+                            <h5 class="card-text">7ºC</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Tuesday 01/05/2021</h4>
+                            <h5 class="card-text">4ºC</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cloud-sun"></i>
+                        <div class="card-body">
+                            <h4 class="card-title">Wednesday 01/06/2021</h4>
+                            <h5 class="card-text">3ºC</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

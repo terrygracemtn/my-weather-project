@@ -1,0 +1,118 @@
+div.whole-card {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-size: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px 25px;
+  width: 750px;
+}
+
+form {
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
+}
+
+section.Forecast {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  color: rgb(26, 175, 46);
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+section.Title {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.col-3 {
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.col-6 {
+  margin-left: 200px;
+}
+
+.location-name {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h5 {
+  text-align: center;
+}
+i {
+  color: blue;
+  font-size: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+div.card {
+  width: 150px;
+  background: rgba(221, 125, 213, 0.719);
+  box-shadow: 2px 2px 2px rgba(91, 105, 114, 0.479);
+  padding: 20px 0;
+  margin: auto;
+}
+
+.card-title {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.card-text {
+  color: black;
+  font-size: 20px;
+}
+
+div.card i {
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+}
