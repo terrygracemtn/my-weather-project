@@ -1,5 +1,10 @@
 div.whole-card {
-  background-image: linear-gradient(to top, #949494 0%, #eee9f1 100%);
+  background-size: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgb(168, 188, 190) 0%,
+    #727272 100%
+  );
   background-size: 100%;
   border-radius: 10px;
   margin: 20px auto;
