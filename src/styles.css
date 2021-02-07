@@ -28,7 +28,7 @@ section.Forecast {
 h1 {
   font-family: "Rubik", sans-serif;
   color: black;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   margin-top: 10px;
 }
@@ -36,7 +36,7 @@ h1 {
 section.Title {
   font-family: "Rubik", sans-serif;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -54,6 +54,7 @@ section.Title {
   color: black;
   font-size: 30px;
   text-align: center;
+  text-transform: capitalize;
   margin-top: 0px;
 }
 h2 {
@@ -89,7 +90,7 @@ i {
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
   color: black;
   text-align: center;
   margin-top: 10px;

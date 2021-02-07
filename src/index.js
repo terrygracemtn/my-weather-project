@@ -1,14 +1,14 @@
 //import "./styles.css";
 let currTime = new Date();
 let date = currTime.getDate();
-let hour = currTime.getHours();
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-let minutes = currTime.getMinutes();
-if (hour < 10) {
-  hour = `0${minutes}`;
-}
+//let hour = currTime.getHours();
+//if (hour < 10) {
+//  hour = `0${hour}`;
+//}
+//let minutes = currTime.getMinutes();
+//if (hour < 10) {
+//  hour = `0${minutes}`;
+//}
 let year = currTime.getFullYear();
 let days = [
   "Sunday",
@@ -36,7 +36,8 @@ let months = [
 ];
 let month = months[currTime.getMonth()];
 let section = document.querySelector("#dateTime");
-section.innerHTML = `<strong>${day}, ${month} ${date}, ${year} ${hour}:${minutes}</strong>`;
+//section.innerHTML = `<strong>${day}, ${month} ${date}, ${year} ${hour}:${minutes}</strong>`;
+section.innerHTML = `<strong>${day}, ${month} ${date}, ${year} </strong>`;
 let apiKey = "35f7b0f4e5add0cd14dd97e4dcd53254";
 
 function search(event) {
@@ -57,7 +58,7 @@ function search(event) {
       let h2 = document.querySelector("#temperature");
       h2.innerHTML = `${temperature}º C`;
       let h4 = document.querySelector("#temperature-description");
-      h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity}`;
+      h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity} %`;
     }
 
     axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
@@ -67,13 +68,13 @@ function search(event) {
       let feelsLike = Math.round(response.data.main.feels_like);
       let humidity = response.data.main.humidity;
       let name = response.data.name;
-      searchInput.innerHTML = "Request a City";
+      searchInput.innerHTML = "Enter a City";
       let h2 = document.querySelector("#city");
       h2.innerHTML = `<strong>${name}</strong>`;
       let h3 = document.querySelector("#temperature");
       h3.innerHTML = `${temperature}º C`;
       let h4 = document.querySelector("#temperature-description");
-      h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity}`;
+      h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity} %`;
     }
     function retrievePosition(position) {
       let latitude = position.coords.latitude;
@@ -103,7 +104,7 @@ function showTemperature(response) {
   let h3 = document.querySelector("#temperature");
   h3.innerHTML = `${temperature}º C`;
   let h4 = document.querySelector("#temperature-description");
-  h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity}`;
+  h4.innerHTML = `Feels like: ${feelsLike}º C  -  Humidity: ${humidity} %`;
 }
 function retrievePosition(position) {
   let latitude = position.coords.latitude;
