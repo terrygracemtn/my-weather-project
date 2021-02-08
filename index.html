@@ -19,83 +19,49 @@
 
 <body>
     <div class="container">
-
         <div class="whole-card">
-            <h1>Current Tempº</h1>
-            <section class="Title">
-                <div id="dateTime">
+            <div class="weather-app">
+                <h1>Current Tempº</h1>
+                <section class="Title">
+                    <div id="dateTime">
+                    </div>
+                </section>
+            
+                <form id="search-city" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Enter a City" autocomplete="off" autofocus="on"
+                                id="search-city-input" />        
+                            <input type="submit" value="Search" class="btn btn-primary" />
+                    </div>
+                </form>
+                <div class="overview">
+                    <h2 id="city"></h2>
+                    <ul>
+                        <li id="description"></li>
+                    </ul>
                 </div>
-            </section>
-            <form id="search-city">
-                <div class="row">
+                <div class="row current-forcast">
                     <div class="col-6">
-                        <input type="search" placeholder="Enter a City" autocomplete="off" autofocus="on"
-                            id="search-city-input" />
-                        <input type="submit" value="Find" class="btn btn-primary" />
+                        <div class="clearfix weather-temperature">
+                            <img src="" alt="Clear" id="icon" class="float-left" />
+                                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+                                        class="active">°C</a> |
+                                    <a href="#" id="fahrenheit-link">°F</a></span>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <input type="submit" value="Current Location" class="btn btn-success" id="current-location" />
-                    </div>
+                    <div class="col-6">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> km/H</li>
+                    </ul>
                 </div>
-            </form>
-            <section class="Location">
-                <div class="location-name">
-                    <h2 id="city">
-                        <strong>Nashville
-                        </strong>
-                    </h2>
-                </div>
-                <h3 id="temperature">
-                    4.4º C
-                </h3>
-                <h4 id="temperature-description">
-                    Feels Like: 3.9º C - Humidity: 40%
-                </h4>
-            </section>
-            <section class="Forescast">
-                <div class="card-group">
-                    <div class="card">
-                        <i class="fas fa-sun"></i>
-                        <div class="card-body">
-                            <h4 class="card-title">Saturday 01/02/2021</h4>
-                            <h5 class="card-text">10ºC</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-cloud-sun"></i>
-                        <div class="card-body">
-                            <h4 class="card-title">Sunday 01/03/2021</h4>
-                            <h5 class="card-text">9ºC</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-cloud-sun"></i>
-                        <div class="card-body">
-                            <h4 class="card-title">Monday 01/04/2021</h4>
-                            <h5 class="card-text">7ºC</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-cloud-sun-rain"></i>
-                        <div class="card-body">
-                            <h4 class="card-title">Tuesday 01/05/2021</h4>
-                            <h5 class="card-text">4ºC</h5>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-cloud-sun"></i>
-                        <div class="card-body">
-                            <h4 class="card-title">Wednesday 01/06/2021</h4>
-                            <h5 class="card-text">3ºC</h5>
-                        </div>
-                    </div>
-                </div>
-                <p>
-                    <a href="https://github.com/terrygracemtn/my-weather-project"
-                    target="_blank">Open Source Code</a>
-                    by Teresa Cox
-                </p>
-            </section>
+            </div>
+            <div class="row weather-forecast" id="forecast"></div>
+            <small>
+                <a href="https://github.com/terrygracemtn/my-weather-project" target="_blank">Open Source Code</a>
+                by Teresa Cox
+            </small>
         </div>
     </div>
     <script src="src/index.js"></script>
