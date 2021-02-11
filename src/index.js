@@ -61,6 +61,7 @@ let section = document.querySelector("#dateTime");
 section.innerHTML = `<strong>${day}, ${month} ${date}, ${year} </strong>`;
 
 function showTemperature(response) {
+
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -82,9 +83,6 @@ function showTemperature(response) {
      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
      );
     iconElement.setAttribute("alt", response.data.weather[0].description);
-    console.log(response);
-    console.log(temperatureElement);
-    console.log(cityElement);
 
 }
 function dispalyForecast(response) {
@@ -93,7 +91,6 @@ function dispalyForecast(response) {
   let forecast = null;
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
-    console.log(forecast);
     forecastElement.innerHTML += `
     <div class="col-2">
       <h3>
